@@ -1,0 +1,79 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  .top-header-bg{
+    background-color: white;
+  }
+  .container-top-heading{
+    padding-top: 25px;
+    text-align: center;
+    
+  }
+  .top-heading{
+  font-size: x-large;
+  text-align: center;
+  height: 60px;
+  color: black;
+  }
+  .avatar{
+    margin-bottom: 50px;
+   
+    
+  }
+   .avatar-img{
+    height: 85px;
+    width: 85px;
+    max-width: none; 
+  }
+  .avatar-wrapper-top-heading{
+    position: relative;
+    padding-top: 25px;
+    height: 100px;
+    padding-left: 50px;
+    max-width: none;
+  }
+  .avatar-wrapper-bottom-heading{
+  position: absolute;
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 15px;
+  }
+  .second-wrapper{
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .second-wrapper-heading{
+    padding-left: 30px;
+    font-size: 15px;
+    
+  }
+  .third-wrapper-heading{
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  .third-wrapper-second-heading{
+    font-size: 15px;
+    padding-left: 30px;
+    
+  }
+  .third-wrapper-third-heading{
+    font-size: 15px;
+    padding-left: 30px;
+   
+  }
+  .forth-heading{
+    padding-top: 20px;
+  }
+  .forth-wrapper-heading{
+     font-size: 15px;
+    padding-left: 30px;
+  }
+  .forth-wrapper-first-heading{
+    font-size: 15px;
+    padding-left: 30px;
+  }
+
+ion-item{
+  background-color: beige;
+
+}

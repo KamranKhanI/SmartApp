@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+<ion-row class="headerRow">
+  <ion-col size="4"  > 
+    <ion-icon routerLink="/location" routerDirection="root" style=" padding-left: 2vh;   padding-top: 3px;" class="fontsize" name="chevron-back-outline"></ion-icon>
+  </ion-col>
+  <ion-col size="5">Weather Updates</ion-col>
+  
+</ion-row>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+  <i class="material-icons" >
+    wb_sunny
+    </i>
+
+    <div  class="locationtext">
+      <p>Satellite Town Plost 551 C</p>
+    </div>
+
+  <div  style="width:95vw ;padding-top:20px">
+
+  
+    <mat-form-field  style="width:95vw " class="paddingselect mat-select-panel-wrap">
+      <mat-select placeholder="Temprature " style="border-bottom: none;" >
+        <mat-option *ngFor="let temp of temperature" [value]="temp.value">
+          {{temp.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field  style="width:95vw " class="paddingselect mat-select-panel-wrap">
+      <mat-select placeholder="Outdoor Humidity " >
+        <mat-option *ngFor="let hum of humidity" [value]="hum.value">
+          {{hum.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field  style="width:95vw" class="paddingselect mat-select-panel-wrap">
+      <mat-select placeholder="Outdoor Air Pressure " >
+        <mat-option *ngFor="let pre of pressure" [value]="pre.value">
+          {{pre.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field  style="width:95vw " class="paddingselect mat-select-panel-wrap">
+      <mat-select placeholder="Outdoor Wind Speed " >
+        <mat-option *ngFor="let spe of speed" [value]="spe.value">
+          {{spe.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    
+  </div>
+</ion-content>

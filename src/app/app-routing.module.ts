@@ -10,6 +10,42 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'location',
+    loadChildren: () => import('./pages/location/location.module').then( m => m.LocationPageModule)
+  },
+  {
+    path: 'devices',
+    loadChildren: () => import('./pages/devices/devices.module').then( m => m.DevicesPageModule)
+  },
+  {
+    path: 'rooms',
+    loadChildren: () => import('./pages/rooms/rooms.module').then( m => m.RoomsPageModule)
+  },
+  {
+    path: 'weather-updates',
+    loadChildren: () => import('./pages/weather-updates/weather-updates.module').then( m => m.WeatherUpdatesPageModule)
+  },
+  {
+    path: 'gird-list-popover',
+    loadChildren: () => import('./pages/gird-list-popover/gird-list-popover.module').then( m => m.GirdListPopoverPageModule)
+  },
+  {
+    path: 'messages',
+    loadChildren: () => import('./pages/messages/messages.module').then( m => m.MessagesPageModule)
+  },
+  {
+    path: 'notification-settings',
+    loadChildren: () => import('./pages/notification-settings/notification-settings.module').then( m => m.NotificationSettingsPageModule)
   }
 ];
 

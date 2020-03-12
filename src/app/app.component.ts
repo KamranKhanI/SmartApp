@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { AndroidFullScreen } from '@ionic-native/android-full-screen/ngx';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -42,10 +42,16 @@ export class AppComponent implements OnInit {
       url: '/folder/Spam',
       icon: 'warning'
     }
+    ,{
+      title: 'Home',
+      url: 'home',
+      icon: 'home'
+    }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
+   
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
@@ -57,6 +63,9 @@ export class AppComponent implements OnInit {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.statusBar.overlaysWebView(true);
+
+      
     });
   }
 

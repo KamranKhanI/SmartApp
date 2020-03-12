@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <ion-row class="top-header-bg" >
+      <!-- <ion-col class="left-icon iconstyle" size="4">
+        <ion-icon name="menu-outline"></ion-icon>
+      </ion-col> -->
+      <ion-col class="top-heading" >
+        <h3>My profile</h3>
+      </ion-col>
+      <!-- <ion-col class="right-icon iconstyle" size="4">
+        <ion-icon name="create-outline"></ion-icon> 
+      </ion-col> -->
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-item  lines="none">
+    <ion-avatar class="avatar" slot="start" >
+      <img class="avatar-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    </ion-avatar>
+    
+      <h4 class="avatar-wrapper-top-heading">Tap To Enter Name</h4>
+      <span class="avatar-wrapper-bottom-heading">Zee@gmail.com</span>
+    
+  </ion-item>
+  <ion-item class="second-wrapper" (click)="gotoAddHome()" lines="none">
+    
+    <ion-icon name="home"></ion-icon>
+    <h4 class="second-wrapper-heading">Home Management</h4>
+  </ion-item>
+  <ion-list>
+    <ion-item lines="none" (click)="gotoMessages()">
+      <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      <h4 class="third-wrapper-heading">Message Center</h4>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-icon name="book-outline"></ion-icon>
+      <h4 class="third-wrapper-second-heading">FAQ & FeedBack</h4>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="bookmark-outline"></ion-icon>
+      <h4 class="third-wrapper-third-heading">More Services</h4>
+    </ion-item>
+  </ion-list>
+<ion-list class="forth-heading">
+    <ion-item lines="none">
+      <ion-icon name="radio-outline"></ion-icon>
+      <h4 class="forth-wrapper-heading">Configure Wi-Fi</h4>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="settings-outline"></ion-icon>
+      <h4 class="forth-wrapper-first-heading">Settings</h4>
+    </ion-item>
+  </ion-list>
+</ion-content>
