@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { DevicesPageRoutingModule } from './devices-routing.module';
 import {MatSelectModule} from '@angular/material/select';
 import { DevicesPage } from './devices.page';
-import { GridlistComponent } from 'src/app/components/gridlist/gridlist.component';
+
 
 
 @NgModule({
