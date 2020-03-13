@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { LocationPageRoutingModule } from './location-routing.module';
 
 import { LocationPage } from './location.page';
-
+import {  AppMaterialModule} from "../../app-material/app-material.module";
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LocationPageRoutingModule
+    LocationPageRoutingModule,
+    MatButtonToggleModule,
+    MatGridListModule,
   ],
   declarations: [LocationPage]
 })

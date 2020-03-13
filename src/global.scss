@@ -28,3 +28,7 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import './app/home/home.page.scss';
 
+mat-form-field {
+    width: 100%;
+}
+
