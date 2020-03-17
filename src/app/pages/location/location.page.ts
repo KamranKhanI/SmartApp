@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-location',
@@ -8,14 +10,12 @@ import { Router } from "@angular/router";
 })
 export class LocationPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private navController:NavController) { }
 
   ngOnInit() {
   }
 
   weatherupdate(){
-    this.router.navigate(['weather-updates'])
-
-
+    this.navController.navigateForward('weather-updates')
   }
 }

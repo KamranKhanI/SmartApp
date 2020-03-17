@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="headingtitle">Homes</ion-title>
+   
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list class="forth-heading">
+    <ion-item lines="none" color="light" >
+      <ion-label slot="start">Home Test 1</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-label style="margin-left: 20%;" >Home</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="save-button"shape="round" color="warning" (click)="addHome()">ADD HOME</ion-button>
+</ion-content>

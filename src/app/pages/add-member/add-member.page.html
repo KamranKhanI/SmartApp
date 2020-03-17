@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="headingtitle">Add Member</ion-title>
+   
+</ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="wrapperinput">
+    <mat-form-field class="example-form-field">
+      <mat-label>Region</mat-label>
+      <input matInput type="text" [(ngModel)]="value">
+      <button style="background-color: transparent;"  mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  
+  
+    <mat-form-field class="example-form-field">
+      <mat-label>Email/Phone</mat-label>
+      <input matInput type="text" [(ngModel)]="value">
+      <button style="background-color: transparent;" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <div class="innertext">
+      <ion-text>
+       <p>Only after acception the invitation, User 'll become a family memberand be able to access Devices/Rooms.</p>
+      </ion-text>
+    </div>
+
+
+
+    <mat-form-field  >
+      <mat-select placeholder="Family Role" >
+        <mat-option *ngFor="let spe of role" [value]="spe.value">
+          {{spe.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+
+  <p>
+    <ion-button class="save-button" shape="round" color="warning" (click)="addMember()">ADD MEMBER</ion-button>
+  </p>
+   
+</ion-content>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router  } from "@angular/router";
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -7,12 +8,15 @@ import { Router  } from "@angular/router";
 })
 export class ProfilePage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private navController:NavController) { }
 
   ngOnInit() {
   }
   gotoMessages(){
 
-    this.router.navigate(['messages'])
+    this.navController.navigateForward('messages')
+  }
+  gotoAddHome(){
+    this.navController.navigateForward('home-management')
   }
 }

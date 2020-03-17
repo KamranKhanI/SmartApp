@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="headingtitle">Add Home</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="wrapperinput">
+    <mat-form-field class="example-form-field">
+      <mat-label>Home Name</mat-label>
+      <input matInput type="text" [(ngModel)]="value">
+      <button style="background-color: transparent;"  mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  
+  
+    <mat-form-field class="example-form-field">
+      <mat-label>Home Location</mat-label>
+      <input matInput type="text" [(ngModel)]="value">
+      <button style="background-color: transparent;" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+
+  <ion-item lines='none'>
+    <ion-label>Rooms :</ion-label>
+  </ion-item>
+
+  
+    <ion-list lines='none'>
+      <div class="bg">
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+        <mat-checkbox labelPosition="after"></mat-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+        <mat-checkbox labelPosition="after"></mat-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+        <mat-checkbox labelPosition="after"></mat-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+        <mat-checkbox labelPosition="after"></mat-checkbox>
+      </ion-item>
+    </div>
+    </ion-list> 
+
+  
+
+
+
+
+  
+
+    <ion-button class="save-button"shape="round" color="warning" (click)="addHome()">ADD HOME</ion-button>
+
+
+</ion-content>

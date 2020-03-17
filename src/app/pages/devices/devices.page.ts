@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController, NavController } from "@ionic/angular";
-import { Router } from '@angular/router';
 import { NgModule ,ViewEncapsulation} from '@angular/core';
  
 @Component({
@@ -17,9 +16,9 @@ export class DevicesPage implements OnInit {
   }
  
   locationpage(){
-    console.log("working from location")
+    
 
-    this.navController.navigateForward(['location'])
+    this.navController.navigateForward('location')
   }
 
 

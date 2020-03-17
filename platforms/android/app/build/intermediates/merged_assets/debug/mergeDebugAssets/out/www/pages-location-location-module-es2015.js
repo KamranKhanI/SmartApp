@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n<ion-row class=\"headerRow\">\n  <ion-col size=\"5\"  > \n    <ion-icon routerLink=\"/home\" routerDirection=\"root\" style=\" padding-left: 2vh;   padding-top: 3px;\" class=\"fontsize\" name=\"chevron-back-outline\"></ion-icon>\n  </ion-col>\n  <ion-col size=\"5\">Globe</ion-col>\n  <ion-col size=\"2\">\n    <ion-icon  class=\"fontsize\" style=\"padding-left: 2vh;\" name=\"ellipsis-horizontal-outline\" (click)=\"weatherupdate()\"></ion-icon>\n  </ion-col>\n</ion-row>\n</ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"headingtitle\">Global</ion-title>\n    <ion-icon slot=\"end\" name=\"ellipsis-horizontal-outline\" (click)=\"weatherupdate()\"></ion-icon>\n</ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"ion-text-center\">\n      <h5>Today, 4:22:36 pm</h5>\n  </div>\n\n\n  <ion-row>\n \n    <ion-col  size=\"10\" style=\"padding-left: 5rem;\">\n      <ion-item class=\"ion-text-center\" lines=\"none\">\n        <ion-icon name=\"sunny\" ></ion-icon>\n        <ion-label>6:25 am</ion-label>\n      \n     \n        <ion-icon name=\"moon\" ></ion-icon>\n        <ion-label>6:30pm</ion-label>\n      </ion-item>\n    </ion-col>\n     \n  </ion-row>\n  <div class=\"ion-text-center\">\n    <ion-icon name=\"ellipse\" style=\"font-size: 38px;\"></ion-icon>\n    <ion-label style=\"font-size: 30px;\">Clear</ion-label>\n</div>\n\n\n<ion-row>\n  <ion-col size=\"6\" class=\"ion-text-end\">Temperature</ion-col>\n  <ion-col size=\"6\" class=\"ion-text-start\">22 C</ion-col>\n</ion-row>\n<ion-row>\n  <ion-col size=\"6\" class=\"ion-text-end\">Air Pressure</ion-col>\n  <ion-col size=\"6\" class=\"ion-text-start\">1014hPa</ion-col>\n</ion-row>\n<ion-row>\n  <ion-col size=\"6\" class=\"ion-text-end\">Humidity</ion-col>\n  <ion-col size=\"6\" class=\"ion-text-start\">33 %</ion-col>\n</ion-row>\n<ion-row>\n  <ion-col size=\"6\" class=\"ion-text-end\">Wind Speed</ion-col>\n  <ion-col size=\"6\" class=\"ion-text-start\">4.82 m/s</ion-col>\n</ion-row>\n<ion-row>\n  <ion-col size=\"6\" class=\"ion-text-end\">Wind Degree</ion-col>\n  <ion-col size=\"6\" class=\"ion-text-start\">351</ion-col>\n</ion-row>\n\n</ion-content>");
 
 /***/ }),
 
@@ -67,6 +67,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 /* harmony import */ var _location_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./location-routing.module */ "./src/app/pages/location/location-routing.module.ts");
 /* harmony import */ var _location_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./location.page */ "./src/app/pages/location/location.page.ts");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm2015/grid-list.js");
+/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+
+
 
 
 
@@ -82,7 +86,9 @@ LocationPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
-            _location_routing_module__WEBPACK_IMPORTED_MODULE_5__["LocationPageRoutingModule"]
+            _location_routing_module__WEBPACK_IMPORTED_MODULE_5__["LocationPageRoutingModule"],
+            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"],
+            _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"],
         ],
         declarations: [_location_page__WEBPACK_IMPORTED_MODULE_6__["LocationPage"]]
     })
@@ -101,7 +107,7 @@ LocationPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".headerRow {\n  padding-top: 2vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RhbnZpL0Rvd25sb2Fkcy9pbzUvU21hcnRBcC9zcmMvYXBwL3BhZ2VzL2xvY2F0aW9uL2xvY2F0aW9uLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvbG9jYXRpb24vbG9jYXRpb24ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZ0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xvY2F0aW9uL2xvY2F0aW9uLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXJSb3d7XG4gICAgcGFkZGluZy10b3A6IDJ2aDtcbn0iLCIuaGVhZGVyUm93IHtcbiAgcGFkZGluZy10b3A6IDJ2aDtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".headingtitle {\n  padding-left: 26%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RhbnZpL0Rvd25sb2Fkcy9pbzUvU21hcnRBcC9zcmMvYXBwL3BhZ2VzL2xvY2F0aW9uL2xvY2F0aW9uLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvbG9jYXRpb24vbG9jYXRpb24ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksaUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xvY2F0aW9uL2xvY2F0aW9uLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkaW5ndGl0bGV7XG4gICAgcGFkZGluZy1sZWZ0OiAyNiU7XG59IiwiLmhlYWRpbmd0aXRsZSB7XG4gIHBhZGRpbmctbGVmdDogMjYlO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -117,22 +123,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocationPage", function() { return LocationPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 
 
 
 let LocationPage = class LocationPage {
-    constructor(router) {
-        this.router = router;
+    constructor(navController) {
+        this.navController = navController;
     }
     ngOnInit() {
     }
     weatherupdate() {
-        this.router.navigate(['weather-updates']);
+        this.navController.navigateForward('weather-updates');
     }
 };
 LocationPage.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] }
 ];
 LocationPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -140,7 +146,7 @@ LocationPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./location.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/location/location.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./location.page.scss */ "./src/app/pages/location/location.page.scss")).default]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])
 ], LocationPage);
 
 

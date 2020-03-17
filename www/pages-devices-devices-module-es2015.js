@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n<ion-row class=\"margin-rop:1vh\">\n  <ion-col size=\"3\" style=\"padding-top: 30px;\"(click)=\"locationpage()\"> \n    <ion-icon class=\"iconsize\" name=\"location-outline\"></ion-icon>\n  </ion-col>\n  <ion-col  style=\"padding-left: 15px;\" size=\"6\"><h4>Smart Home</h4></ion-col>\n  <ion-col size=\"3\" style=\" padding-left: 25px;\">\n    <ion-icon class=\"iconsize\" style=\"padding-top: 20px;\" name=\"mic-outline\"></ion-icon>\n    <i class=\"material-icons\">add_circle_outline </i>\n  </ion-col>\n</ion-row>\n</ion-toolbar>\n</ion-header>\n\n\n\n<ion-content>\n  <ion-row class=\"headerRow\">\n    <ion-col size=\"5\">\n     \n      <div class=\"popover__wrapper1\">\n        Test Home1\n        <ion-icon name=\"caret-down-outline\"></ion-icon>\n      <div class=\"popover__content1\">\n        <ion-list  lines=\"none\">\n\n          <ion-item>\n            Test Home 1\n            <ion-icon name=\"disc-outline\" slot=\"end\"></ion-icon>\n          </ion-item>\n\n          <ion-item>\n            <ion-icon name=\"options-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">Home Management</ion-label>\n            <ion-icon name=\"chevron-forward-outline\" slot=\"end\"></ion-icon>\n          </ion-item>\n        \n          </ion-list>\n      </div>\n    </div>\n    </ion-col>\n    <ion-col size=\"5\">\n     \n    </ion-col>\n    <ion-col size=\"2\">\n      <div class=\"popover__wrapper\">\n      \n        <i class=\"iconsize popover__title\" style=\"padding-left: 2vh;\" class=\"material-icons\" (click)=\"openGL_view()\" >more_horiz</i> \n      \n      <div class=\"popover__content\">\n        <ion-list  lines=\"none\">\n          <ion-item>\n            <ion-icon name=\"grid-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">Grid View</ion-label>\n            \n          </ion-item>\n        \n          <ion-item>\n            <ion-icon name=\"list-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">List View</ion-label>\n            \n          </ion-item>\n          </ion-list>\n\n      </div>\n    </div>\n    </ion-col>\n  </ion-row>\n\n\n<ion-row>\n  <ion-col >\n\n    \n  </ion-col>\n</ion-row>\n\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n<ion-row class=\"margin-rop:1vh\">\n  <ion-col size=\"3\" style=\"padding-top: 30px;\"(click)=\"locationpage()\"> \n    <ion-icon class=\"iconsize\" name=\"location-outline\"></ion-icon>\n  </ion-col>\n  <ion-col  style=\"padding-left: 15px;\" size=\"6\"><h4>Smart Home</h4></ion-col>\n  <ion-col size=\"3\" style=\" padding-left: 25px;\">\n    <ion-icon class=\"iconsize\" style=\"padding-top: 20px;\" name=\"mic-outline\"></ion-icon>\n    <i class=\"material-icons\">add_circle_outline </i>\n  </ion-col>\n</ion-row>\n</ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-row class=\"headerRow\">\n    <ion-col size=\"5\">\n     \n      <div class=\"popover__wrapper1\">\n        Test Home1\n        <ion-icon name=\"caret-down-outline\"></ion-icon>\n      <div class=\"popover__content1\">\n        <ion-list  lines=\"none\">\n\n          <ion-item>\n            Test Home 1\n            <ion-icon name=\"disc-outline\" slot=\"end\"></ion-icon>\n          </ion-item>\n\n          <ion-item>\n            <ion-icon name=\"options-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">Home Management</ion-label>\n            <ion-icon name=\"chevron-forward-outline\" slot=\"end\"></ion-icon>\n          </ion-item>\n        \n          </ion-list>\n      </div>\n    </div>\n    </ion-col>\n    <ion-col size=\"5\">\n     \n    </ion-col>\n    <ion-col size=\"2\">\n      <div class=\"popover__wrapper\">\n      \n        <i class=\"iconsize popover__title\" style=\"padding-left: 2vh;\" class=\"material-icons\" (click)=\"openGL_view()\">more_horiz</i> \n      \n      <div class=\"popover__content\">\n        <ion-list  lines=\"none\">\n          <ion-item>\n            <ion-icon name=\"grid-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">Grid View</ion-label>\n            \n          </ion-item>\n        \n          <ion-item>\n            <ion-icon name=\"list-outline\"></ion-icon>\n            <ion-label style=\"padding-left: 10px;\">List View</ion-label>\n            \n          </ion-item>\n          </ion-list>\n\n      </div>\n    </div>\n    </ion-col>\n  </ion-row>\n\n\n\n\n</ion-content>\n");
 
 /***/ }),
 
@@ -121,26 +121,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-
 
 
 
 
 let DevicesPage = class DevicesPage {
-    constructor(rounter, popoverController) {
-        this.rounter = rounter;
+    constructor(navController, popoverController) {
+        this.navController = navController;
         this.popoverController = popoverController;
     }
     ngOnInit() {
     }
     locationpage() {
-        console.log("working from location");
-        this.rounter.navigate(['location']);
+        this.navController.navigateForward('location');
     }
 };
 DevicesPage.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["PopoverController"] }
 ];
 DevicesPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -151,7 +148,7 @@ DevicesPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./devices.page.scss */ "./src/app/pages/devices/devices.page.scss")).default]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["PopoverController"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["PopoverController"]])
 ], DevicesPage);
 
 

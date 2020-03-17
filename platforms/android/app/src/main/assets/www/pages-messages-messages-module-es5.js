@@ -15,7 +15,7 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n<ion-row class=\"headerRow\">\n  <ion-col size=\"5\"  > \n    <ion-icon routerLink=\"/home/tab3\" routerDirection=\"root\" style=\" padding-left: 2vh;   padding-top: 3px;\" class=\"fontsize\" name=\"chevron-back-outline\"></ion-icon>\n  </ion-col>\n  <ion-col size=\"5\">Messages</ion-col>\n  <ion-col size=\"2\">\n    <ion-icon  class=\"fontsize\" style=\"padding-left: 2vh;\" name=\"settings-outline\" (click)=\"gotoNotificationSetting()\"></ion-icon>\n   \n  </ion-col>\n</ion-row>\n</ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n   \n    <mat-tab label=\"First\"> \n       <ng-template mat-tab-label>\n        <ion-icon name=\"home\"></ion-icon>\n     </ng-template> \n     <div>\n     fasdfewvd\n    </div>\n</mat-tab>\n  \n    <mat-tab label=\"Second\"> \n      <ng-template mat-tab-label>\n        <ion-icon name=\"volume-high-sharp\"></ion-icon>\n     </ng-template> \n\n\n     <div>\n      dasdfasdfasdfasdfasdfasd\n    </div>\n       </mat-tab>\n      \n  <mat-tab label=\"Third\"> \n    <ng-template mat-tab-label>\n      <ion-icon name=\"time\" ></ion-icon>\n   </ng-template> \n\n   <div class=\"example-container\">\n    <mat-form-field appearance=\"fill\">\n      <mat-label>Input</mat-label>\n      <input matInput>\n    </mat-form-field>\n    <br>\n   \n    \n    <mat-form-field appearance=\"fill\">\n      <mat-label>Textarea</mat-label>\n      <textarea matInput></textarea>\n    </mat-form-field>\n  </div>\n  \n  </mat-tab>\n  </mat-tab-group>\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"headingtitle\">Messages</ion-title>\n    <ion-icon slot=\"end\" name=\"settings\" (click)=\"gotoNotificationSetting()\"></ion-icon>\n  </ion-toolbar>\n</ion-header>\n\n\n<ion-content>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n   \n    <mat-tab label=\"First\"> \n       <ng-template mat-tab-label>\n        <ion-icon name=\"home\"></ion-icon>\n     </ng-template> \n     <div>\n     fasdfewvd\n    </div>\n</mat-tab>\n  \n    <mat-tab label=\"Second\"> \n      <ng-template mat-tab-label>\n        <ion-icon name=\"volume-high-sharp\"></ion-icon>\n     </ng-template> \n\n\n     <div>\n      dasdfasdfasdfasdfasdfasd\n    </div>\n       </mat-tab>\n      \n  <mat-tab label=\"Third\"> \n    <ng-template mat-tab-label>\n      <ion-icon name=\"time\" ></ion-icon>\n   </ng-template> \n\n   <div class=\"example-container\">\n    <mat-form-field appearance=\"fill\">\n      <mat-label>Input</mat-label>\n      <input matInput>\n    </mat-form-field>\n    <br>\n   \n    \n    <mat-form-field appearance=\"fill\">\n      <mat-label>Textarea</mat-label>\n      <textarea matInput></textarea>\n    </mat-form-field>\n  </div>\n  \n  </mat-tab>\n  </mat-tab-group>\n</ion-content>\n";
     /***/
   },
 
@@ -179,7 +179,7 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".headerRow {\n  padding-top: 2vh;\n}\n\n.mat-tab-group {\n  margin-bottom: 48px;\n}\n\nion-icon {\n  font-size: 20px;\n}\n\n.example-stretched-tabs {\n  max-width: 800px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RhbnZpL0Rvd25sb2Fkcy9pbzUvU21hcnRBcC9zcmMvYXBwL3BhZ2VzL21lc3NhZ2VzL21lc3NhZ2VzLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvbWVzc2FnZXMvbWVzc2FnZXMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZ0JBQUE7QUNDSjs7QURFQTtFQUNJLG1CQUFBO0FDQ0o7O0FEQ0U7RUFDSSxlQUFBO0FDRU47O0FEQ0U7RUFDRSxnQkFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbWVzc2FnZXMvbWVzc2FnZXMucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlclJvd3tcbiAgICBwYWRkaW5nLXRvcDogMnZoO1xufVxuXG4ubWF0LXRhYi1ncm91cCB7XG4gICAgbWFyZ2luLWJvdHRvbTogNDhweDtcbiAgfVxuICBpb24taWNvbntcbiAgICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgfVxuXG4gIC5leGFtcGxlLXN0cmV0Y2hlZC10YWJzIHtcbiAgICBtYXgtd2lkdGg6IDgwMHB4O1xuICB9IiwiLmhlYWRlclJvdyB7XG4gIHBhZGRpbmctdG9wOiAydmg7XG59XG5cbi5tYXQtdGFiLWdyb3VwIHtcbiAgbWFyZ2luLWJvdHRvbTogNDhweDtcbn1cblxuaW9uLWljb24ge1xuICBmb250LXNpemU6IDIwcHg7XG59XG5cbi5leGFtcGxlLXN0cmV0Y2hlZC10YWJzIHtcbiAgbWF4LXdpZHRoOiA4MDBweDtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".headerRow {\n  padding-top: 2vh;\n}\n\n.mat-tab-group {\n  margin-bottom: 48px;\n}\n\nion-icon {\n  font-size: 20px;\n}\n\n.example-stretched-tabs {\n  max-width: 800px;\n}\n\n.headingtitle {\n  padding-left: 26%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RhbnZpL0Rvd25sb2Fkcy9pbzUvU21hcnRBcC9zcmMvYXBwL3BhZ2VzL21lc3NhZ2VzL21lc3NhZ2VzLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvbWVzc2FnZXMvbWVzc2FnZXMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZ0JBQUE7QUNDSjs7QURFQTtFQUNJLG1CQUFBO0FDQ0o7O0FEQ0U7RUFDSSxlQUFBO0FDRU47O0FEQ0U7RUFDRSxnQkFBQTtBQ0VKOztBREdFO0VBQ0UsaUJBQUE7QUNBSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL21lc3NhZ2VzL21lc3NhZ2VzLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXJSb3d7XG4gICAgcGFkZGluZy10b3A6IDJ2aDtcbn1cblxuLm1hdC10YWItZ3JvdXAge1xuICAgIG1hcmdpbi1ib3R0b206IDQ4cHg7XG4gIH1cbiAgaW9uLWljb257XG4gICAgICBmb250LXNpemU6IDIwcHg7XG4gIH1cblxuICAuZXhhbXBsZS1zdHJldGNoZWQtdGFicyB7XG4gICAgbWF4LXdpZHRoOiA4MDBweDtcbiAgfVxuXG5cblxuICAuaGVhZGluZ3RpdGxle1xuICAgIHBhZGRpbmctbGVmdDogMjYlO1xufSIsIi5oZWFkZXJSb3cge1xuICBwYWRkaW5nLXRvcDogMnZoO1xufVxuXG4ubWF0LXRhYi1ncm91cCB7XG4gIG1hcmdpbi1ib3R0b206IDQ4cHg7XG59XG5cbmlvbi1pY29uIHtcbiAgZm9udC1zaXplOiAyMHB4O1xufVxuXG4uZXhhbXBsZS1zdHJldGNoZWQtdGFicyB7XG4gIG1heC13aWR0aDogODAwcHg7XG59XG5cbi5oZWFkaW5ndGl0bGUge1xuICBwYWRkaW5nLWxlZnQ6IDI2JTtcbn0iXX0= */";
     /***/
   },
 
@@ -217,25 +217,25 @@
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 
     let MessagesPage = class MessagesPage {
-      constructor(router) {
-        this.router = router;
+      constructor(navControl) {
+        this.navControl = navControl;
       }
 
       ngOnInit() {}
 
       gotoNotificationSetting() {
-        this.router.navigate(['notification-settings']);
+        this.navControl.navigateForward('notification-settings');
       }
 
     };
 
     MessagesPage.ctorParameters = () => [{
-      type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]
     }];
 
     MessagesPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -246,7 +246,7 @@
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./messages.page.scss */
       "./src/app/pages/messages/messages.page.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])], MessagesPage);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])], MessagesPage);
     /***/
   }
 }]);

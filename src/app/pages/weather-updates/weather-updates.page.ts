@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NavController } from "@ionic/angular";
 
 interface Temperature {
   value: string;
@@ -53,7 +54,7 @@ export class WeatherUpdatesPage implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private navController:NavController) { }
 
   ngOnInit() {
   }

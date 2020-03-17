@@ -75,5 +75,7 @@ ion-content ion-toolbar {
 
 ion-item{
   background-color: beige;
-
+}
+ion-item.second-wrapper div.item-native{
+  background: red !important;
 }

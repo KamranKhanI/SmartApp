@@ -3,15 +3,8 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-<ion-row class="headerRow">
-  <ion-col size="5"  > 
-    <!-- <ion-icon routerLink="/home" routerDirection="root" style=" padding-left: 2vh;   padding-top: 3px;" class="fontsize" name="chevron-back-outline"></ion-icon> -->
-  </ion-col>
-  <ion-col size="5">Globe</ion-col>
-  <ion-col size="2">
-    <ion-icon  class="fontsize" style="padding-left: 2vh;" name="ellipsis-horizontal-outline" (click)="weatherupdate()"></ion-icon>
-  </ion-col>
-</ion-row>
+    <ion-title class="headingtitle">Global</ion-title>
+    <ion-icon slot="end" name="ellipsis-horizontal-outline" (click)="weatherupdate()"></ion-icon>
 </ion-toolbar>
 </ion-header>
 

@@ -46,6 +46,23 @@ const routes: Routes = [
   {
     path: 'notification-settings',
     loadChildren: () => import('./pages/notification-settings/notification-settings.module').then( m => m.NotificationSettingsPageModule)
+  },
+  {
+    path: 'home-management',
+    loadChildren: () => import('./pages/home-management/home-management.module').then( m => m.HomeManagementPageModule)
+  },
+  
+  {
+    path: 'add-home',
+    loadChildren: () => import('./pages/add-home/add-home.module').then( m => m.AddHomePageModule)
+  },
+  {
+    path: 'home-settings',
+    loadChildren: () => import('./pages/home-settings/home-settings.module').then( m => m.HomeSettingsPageModule)
+  },
+  {
+    path: 'add-member',
+    loadChildren: () => import('./pages/add-member/add-member.module').then( m => m.AddMemberPageModule)
   }
 ];
 

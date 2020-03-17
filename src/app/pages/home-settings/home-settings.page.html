@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="headingtitle">Home Settings</ion-title>
+   
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list lines="none">
+    <ion-item lines="none" color="light" >
+      <ion-label slot="start">Home</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-label style="margin-left: 20%;" >Test Home1</ion-label>
+    </ion-item>
+    <ion-item lines="none" color="light" >
+      <ion-label slot="start">Room Management</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-label style="margin-left: 20%;" >7 Room</ion-label>
+    </ion-item>
+    <ion-item lines="none" color="light" >
+      <ion-label slot="start">Home Location</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-label style="margin-left: 20%;" >Pakista</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item lines='none'>
+    <ion-label>Rooms :</ion-label>
+  </ion-item>
+
+  <div class="itempadding">
+    <ion-item color="light" lines="none">
+      <ion-avatar slot="start">
+        <img src="https://blog.littmanbros.com/wp-content/uploads/2013/03/22-lights-focused-hue.nocrop.w710.h2147483647.2x.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>consectetur adipiscing .</p>
+      </ion-label>
+      <ion-text >Home Owner</ion-text>
+    </ion-item>
+  </div>
+  <div class="itempadding">
+    <ion-item color="light" lines="none">
+      <ion-avatar slot="start">
+        <img src="https://blog.littmanbros.com/wp-content/uploads/2013/03/22-lights-focused-hue.nocrop.w710.h2147483647.2x.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>consectetur adipiscing .</p>
+      </ion-label>
+      <ion-text >Home Owner</ion-text>
+    </ion-item>
+  </div>
+  <div class="itempadding">
+    <ion-item color="light" lines="none">
+      <ion-avatar slot="start">
+        <img src="https://blog.littmanbros.com/wp-content/uploads/2013/03/22-lights-focused-hue.nocrop.w710.h2147483647.2x.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>consectetur adipiscing .</p>
+      </ion-label>
+      <ion-text >Home Owner</ion-text>
+    </ion-item>
+  </div>
+
+<p>
+  <ion-button class="save-button1" shape="round" color="warning" (click)="addMember()">ADD MEMBER</ion-button>
+</p>
+ 
+<p>
+  <ion-button class="save-button1" shape="round" color="danger" >DELETE</ion-button>
+</p>
+
+ 
+</ion-content>
