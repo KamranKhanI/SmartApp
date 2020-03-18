@@ -18,5 +18,10 @@ export class ProfilePage implements OnInit {
   }
   gotoAddHome(){
     this.navController.navigateForward('home-management')
+    
+  }
+
+  gotoPersonal(){
+    this.navController.navigateForward('personal')
   }
 }

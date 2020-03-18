@@ -2,20 +2,16 @@
   <ion-toolbar>
     
     <ion-row class="top-header-bg" >
-      <!-- <ion-col class="left-icon iconstyle" size="4">
-        <ion-icon name="menu-outline"></ion-icon>
-      </ion-col> -->
       <ion-col class="top-heading" >
         <h3>My profile</h3>
       </ion-col>
-      <!-- <ion-col class="right-icon iconstyle" size="4">
-        <ion-icon name="create-outline"></ion-icon> 
-      </ion-col> -->
+   
     </ion-row>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-item  lines="none">
+
+  <ion-item  lines="none" (click)="gotoPersonal()">
     <ion-avatar class="avatar" slot="start" >
       <img class="avatar-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
     </ion-avatar>

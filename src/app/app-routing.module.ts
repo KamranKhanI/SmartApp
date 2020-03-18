@@ -63,6 +63,11 @@ const routes: Routes = [
   {
     path: 'add-member',
     loadChildren: () => import('./pages/add-member/add-member.module').then( m => m.AddMemberPageModule)
+  },
+  
+  {
+    path: 'personal',
+    loadChildren: () => import('./pages/personal/personal.module').then( m => m.PersonalPageModule)
   }
 ];
 
