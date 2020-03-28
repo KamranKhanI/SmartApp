@@ -9,6 +9,8 @@ import { NavController } from '@ionic/angular';
 })
 export class MessagesPage implements OnInit {
 
+  
+
   constructor(private navControl:NavController) { }
 
   ngOnInit() {

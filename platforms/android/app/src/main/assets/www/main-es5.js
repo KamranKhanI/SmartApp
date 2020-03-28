@@ -160,7 +160,7 @@
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-app>\n  <ion-split-pane contentId=\"main-content\">\n    <ion-menu contentId=\"main-content\" type=\"overlay\">\n      <ion-content>\n        <ion-list id=\"inbox-list\">\n          <ion-list-header>SmartApp</ion-list-header>\n          <ion-note>smart@gmail.com</ion-note>\n\n          <ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages; let i = index\">\n            <ion-item (click)=\"selectedIndex = i\" routerDirection=\"root\" [routerLink]=\"[p.url]\" lines=\"none\" detail=\"false\" [class.selected]=\"selectedIndex == i\">\n              <ion-icon slot=\"start\" [ios]=\"p.icon + '-outline'\" [md]=\"p.icon + '-sharp'\"></ion-icon>\n              <ion-label>{{ p.title }}</ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n\n        <ion-list id=\"labels-list\">\n          <ion-list-header>Labels</ion-list-header>\n\n          <ion-item *ngFor=\"let label of labels\" lines=\"none\">\n            <ion-icon slot=\"start\" ios=\"bookmark-outline\" md=\"bookmark-sharp\"></ion-icon>\n            <ion-label>{{ label }}</ion-label>\n          </ion-item>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet id=\"main-content\"></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n";
+    __webpack_exports__["default"] = "<ion-app>\n  <ion-split-pane contentId=\"main-content\">\n    <ion-menu contentId=\"main-content\" type=\"overlay\">\n      <ion-content>\n        <ion-list id=\"inbox-list\">\n          <ion-list-header>SmartApp</ion-list-header>\n          <ion-note>smart@gmail.com</ion-note>\n\n          <ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages; let i = index\">\n            <ion-item (click)=\"selectedIndex = i\" routerDirection=\"root\" [routerLink]=\"[p.url]\" lines=\"none\" detail=\"false\" [class.selected]=\"selectedIndex == i\">\n              <ion-icon slot=\"start\" [ios]=\"p.icon + '-outline'\" [md]=\"p.icon + '-sharp'\"></ion-icon>\n              <ion-label>{{ p.title }}</ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet id=\"main-content\"></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n";
     /***/
   },
 
@@ -999,7 +999,7 @@
 
     const routes = [{
       path: '',
-      redirectTo: 'folder/Inbox',
+      redirectTo: 'home',
       pathMatch: 'full'
     }, {
       path: 'folder/:id',
@@ -1099,6 +1099,34 @@
       "pages-add-member-add-member-module").then(__webpack_require__.bind(null,
       /*! ./pages/add-member/add-member.module */
       "./src/app/pages/add-member/add-member.module.ts")).then(m => m.AddMemberPageModule)
+    }, {
+      path: 'personal',
+      loadChildren: () => __webpack_require__.e(
+      /*! import() | pages-personal-personal-module */
+      "pages-personal-personal-module").then(__webpack_require__.bind(null,
+      /*! ./pages/personal/personal.module */
+      "./src/app/pages/personal/personal.module.ts")).then(m => m.PersonalPageModule)
+    }, {
+      path: 'rooms-management',
+      loadChildren: () => __webpack_require__.e(
+      /*! import() | pages-rooms-management-rooms-management-module */
+      "pages-rooms-management-rooms-management-module").then(__webpack_require__.bind(null,
+      /*! ./pages/rooms-management/rooms-management.module */
+      "./src/app/pages/rooms-management/rooms-management.module.ts")).then(m => m.RoomsManagementPageModule)
+    }, {
+      path: 'map-location',
+      loadChildren: () => __webpack_require__.e(
+      /*! import() | pages-map-location-map-location-module */
+      "pages-map-location-map-location-module").then(__webpack_require__.bind(null,
+      /*! ./pages/map-location/map-location.module */
+      "./src/app/pages/map-location/map-location.module.ts")).then(m => m.MapLocationPageModule)
+    }, {
+      path: 'home-member-detail',
+      loadChildren: () => __webpack_require__.e(
+      /*! import() | pages-home-member-detail-home-member-detail-module */
+      "pages-home-member-detail-home-member-detail-module").then(__webpack_require__.bind(null,
+      /*! ./pages/home-member-detail/home-member-detail.module */
+      "./src/app/pages/home-member-detail/home-member-detail.module.ts")).then(m => m.HomeMemberDetailPageModule)
     }];
     let AppRoutingModule = class AppRoutingModule {};
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
@@ -1187,17 +1215,13 @@
         this.statusBar = statusBar;
         this.selectedIndex = 0;
         this.appPages = [{
+          title: 'Home',
+          url: 'home',
+          icon: 'home'
+        }, {
           title: 'Inbox',
           url: '/folder/Inbox',
           icon: 'mail'
-        }, {
-          title: 'Outbox',
-          url: '/folder/Outbox',
-          icon: 'paper-plane'
-        }, {
-          title: 'Favorites',
-          url: '/folder/Favorites',
-          icon: 'heart'
         }, {
           title: 'Archived',
           url: '/folder/Archived',
@@ -1206,14 +1230,6 @@
           title: 'Trash',
           url: '/folder/Trash',
           icon: 'trash'
-        }, {
-          title: 'Spam',
-          url: '/folder/Spam',
-          icon: 'warning'
-        }, {
-          title: 'Home',
-          url: 'home',
-          icon: 'home'
         }];
         this.labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
         this.initializeApp();

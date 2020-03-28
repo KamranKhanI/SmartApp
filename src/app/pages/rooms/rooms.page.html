@@ -1,16 +1,13 @@
+
+
 <ion-header>
   <ion-toolbar>
-<ion-row class="margin-rop:1vh">
-  <ion-col size="3" style="padding-top: 20px;"(click)="locationpage()"> 
-    <ion-icon class="iconsize" name="location-outline"></ion-icon>
-  </ion-col>
-  <ion-col  style="padding-left: 10px;" size="6"><h4>Smart Home</h4></ion-col>
-  <ion-col size="3" style=" padding-left: 25px;">
-    <ion-icon class="iconsize" style="padding-top: 20px;" name="mic-outline"></ion-icon>
-    <i class="material-icons">add_circle_outline </i>
-  </ion-col>
-</ion-row>
-</ion-toolbar>
+    <ion-icon style="margin-left: 10px;" slot="start" class="iconsize" name="location-outline" (click)="locationpage()"></ion-icon>
+    <ion-title style="margin-left: 21%">Smart Home</ion-title>
+    <ion-icon class="iconsize" slot="end" name="mic-outline"></ion-icon>
+    <ion-icon style="margin-right: 10px;" class="iconsize" slot="end" name="add-circle-outline"></ion-icon>
+    
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>

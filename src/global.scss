@@ -32,12 +32,17 @@ mat-form-field {
     width: 100%;
 }
 .headingtitle{
-    padding-left: 26%;
+    margin-left: 25%
+  
+    
 }
 
 .itempadding{
     padding-top: 10px;
 }
+
+.itemround   { margin: 5px;
+border-radius: 8px;}
 
 .save-button{
     color: white;

@@ -4,14 +4,14 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title class="headingtitle">Messages</ion-title>
-    <ion-icon slot="end" name="settings" (click)="gotoNotificationSetting()"></ion-icon>
+    <ion-icon slot="end" style="margin-right: 10px;" name="settings" (click)="gotoNotificationSetting()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content>
-  <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
-   
+  <!-- <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" fixfill> -->
+    <mat-tab-group mat-stretch-tabs style="height: calc(100% - 64px); min-height: calc(100% - 64px); min-width: 100%; width: 100%; margin: 0px;" fxFill swipeable="true">
     <mat-tab label="First"> 
        <ng-template mat-tab-label>
         <ion-icon name="home"></ion-icon>

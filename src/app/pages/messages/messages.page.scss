@@ -18,3 +18,12 @@
   .headingtitle{
     padding-left: 26%;
 }
+
+
+::ng-deep .mat-tab-header {
+  overflow-x: scroll !important;
+}
+
+::ng-deep .mat-tab-label-container { 
+  overflow: visible !important;
+}

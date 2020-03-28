@@ -1,4 +1,4 @@
-#Wed Mar 18 15:28:30 PKT 2020
+#Sat Mar 28 14:16:15 PKT 2020
 base.0=/home/danvi/Downloads/io5/SmartAp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

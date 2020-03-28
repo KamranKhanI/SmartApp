@@ -14,26 +14,26 @@
   <ion-list lines="none">
     <ion-item lines="none" color="light" >
       <ion-label slot="start">Home</ion-label>
-      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
-      <ion-label style="margin-left: 20%;" >Test Home1</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="changeHouseName()"></ion-icon>
+      <ion-label style="margin-left: 20%;" >{{houseName}}</ion-label>
     </ion-item>
     <ion-item lines="none" color="light" >
       <ion-label slot="start">Room Management</ion-label>
-      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoRoomsManagement()"></ion-icon>
       <ion-label style="margin-left: 20%;" >7 Room</ion-label>
     </ion-item>
     <ion-item lines="none" color="light" >
       <ion-label slot="start">Home Location</ion-label>
-      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoHomeSetting()"></ion-icon>
+      <ion-icon slot="end" name="chevron-forward-outline" (click)="gotoMapLocation()"></ion-icon>
       <ion-label style="margin-left: 20%;" >Pakista</ion-label>
     </ion-item>
   </ion-list>
 
   <ion-item lines='none'>
-    <ion-label>Rooms :</ion-label>
+    <ion-label>Home Member</ion-label>
   </ion-item>
 
-  <div class="itempadding">
+  <div class="itempadding itemround" (click)="gotoRoomMemberDetail()">
     <ion-item color="light" lines="none">
       <ion-avatar slot="start">
         <img src="https://blog.littmanbros.com/wp-content/uploads/2013/03/22-lights-focused-hue.nocrop.w710.h2147483647.2x.jpg">
@@ -54,7 +54,7 @@
         <h3>Lorem ipsum</h3>
         <p>consectetur adipiscing .</p>
       </ion-label>
-      <ion-text >Home Owner</ion-text>
+      <ion-text >Common Member</ion-text>
     </ion-item>
   </div>
   <div class="itempadding">
