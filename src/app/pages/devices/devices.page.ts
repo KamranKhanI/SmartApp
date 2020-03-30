@@ -21,6 +21,10 @@ export class DevicesPage implements OnInit {
     this.navController.navigateForward('location')
   }
 
+  gotoPower(){
+    this.navController.navigateForward('power')
+  }
+
 
 
   

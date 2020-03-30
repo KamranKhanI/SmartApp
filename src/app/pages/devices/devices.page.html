@@ -12,6 +12,22 @@
 
 
 <ion-content>
+
+  <div style="padding-left: 5%; padding-right: 5%;">
+    <ion-row (click)="gotoPower()">
+      <ion-col size="6">
+        <ion-item lines="none">
+          <ion-label style="font-size: small;">Till Now: 0.03kWH</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item lines="none">
+          <ion-label style="font-size: small;">Predicted: 0 kWh</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+
   <ion-row class="headerRow">
     <ion-col size="5">
      
@@ -21,10 +37,25 @@
       <div class="popover__content1">
         <ion-list  lines="none">
 
-          <ion-item>
-            Test Home 1
-            <ion-icon name="disc-outline" slot="end"></ion-icon>
-          </ion-item>
+          <ion-list>
+            <ion-radio-group value="grape">
+             
+              <ion-item lines="full">
+                <ion-label>My Home local</ion-label>
+                <ion-radio slot="end" color="tertiary" value="apple"></ion-radio>
+              </ion-item>
+    
+              <ion-item lines="full">
+                <ion-label>Test</ion-label>
+                <ion-radio slot="end" color="tertiary" value="grape"></ion-radio>
+              </ion-item>
+    
+              <ion-item lines="full">
+                <ion-label>We</ion-label>
+                <ion-radio slot="end" color="tertiary" value="cherry"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+            </ion-list>
 
           <ion-item>
             <ion-icon name="options-outline"></ion-icon>

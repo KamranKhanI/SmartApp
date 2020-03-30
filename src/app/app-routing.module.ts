@@ -80,6 +80,18 @@ const routes: Routes = [
   {
     path: 'home-member-detail',
     loadChildren: () => import('./pages/home-member-detail/home-member-detail.module').then( m => m.HomeMemberDetailPageModule)
+  },
+  {
+    path: 'power',
+    loadChildren: () => import('./pages/power/power.module').then( m => m.PowerPageModule)
+  },
+  {
+    path: 'cost-graph',
+    loadChildren: () => import('./pages/cost-graph/cost-graph.module').then( m => m.CostGraphPageModule)
+  },
+  {
+    path: 'appliances-graph',
+    loadChildren: () => import('./pages/appliances-graph/appliances-graph.module').then( m => m.AppliancesGraphPageModule)
   }
 ];
 
